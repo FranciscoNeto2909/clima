@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Clima</title>
+</head>
+<body>
+    <h1>Clima</h1>
+    <form class="search-container">
+        <input type="text" id="city" autocomplete="none">
+        <button>Buscar</button>
+    </form>
+    <div class="aviso">Carregando...</div>
+    <div class="container">
+        <h2 id="cityName"></h2>
+        <div class="clima-container">
+            <div class="temperatura">
+                <h3>Temperatura</h3>
+                <h3 class="temp-info"></h3>
+                <img src="" alt="clima" id="climaImg">
+            </div>
+            <div class="vento">
+                <h3>Vento</h3>
+                <h3 class="vento-info"></h3>
+                <div class="vento-area">
+                    <div class="vento-ponto" style="transform: rotate(0deg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Criado por Francisco Neto</footer>
+</body>
+</html>
