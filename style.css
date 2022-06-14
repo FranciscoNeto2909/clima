@@ -14,8 +14,11 @@ body{
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
-.search-container,footer,.aviso{
+.search-container,footer,.explain{
     margin-top: 15px;
+}
+.title{
+    margin-bottom: 20px;
 }
 .search-container input{
     padding: 8px;
@@ -87,4 +90,41 @@ body{
 }
 .aviso{
     display: none;
+}
+.footer{
+    position: fixed;
+    bottom: 5px;
+}
+.loader{
+    visibility: hidden;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.loader-item{
+    height: 25px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    animation: scale-up 2s ease-in-out infinite;
+}
+.loader-item--secund{
+    animation-delay: .3s;
+}
+.loader-item--third{
+    animation-delay: .6s;
+}
+
+@keyframes scale-up{
+    20%{
+        transform: scaleY(1.5);
+    }
+    60%{
+        transform: scaleY(1);
+    }
 }

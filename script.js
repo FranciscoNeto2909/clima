@@ -5,9 +5,9 @@ form.addEventListener("submit", async (e) => {
     const cityName = document.querySelector("#city").value
 
     if (cityName !== "") {
-        const aviso = document.querySelector(".aviso")
+        const loader = document.querySelector(".loader")
         const container = document.querySelector(".container")
-        aviso.style.display = "block"
+        loader.style.visibility = "visible"
         container.style.display = "none"
 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(cityName)}&appid=1b95d864e8b125f57fbc08894d3ff146&units=metric&lang=pt_br`
@@ -22,11 +22,13 @@ form.addEventListener("submit", async (e) => {
             document.querySelector(".temp-info").innerHTML = `${json.main.temp + "°C"} <br/> ${json.weather[0].description}`
             document.querySelector(".vento-info").innerHTML = (speed * 3.6).toFixed(2) + "Km/h"
             document.querySelector("#climaImg").src = `http://openweathermap.org/img/wn/${json.weather[0].icon}.png`
-            aviso.style.display = "none"
+            loader.style.display = "none"
             container.style.display = "block"
+            document.querySelector(".explain").style.display = "none"
 
         }else{
-            aviso.innerHTML = "Cidade não encontrada!"
+            loader.style.visibility = "hidden"
+            document.querySelector(".aviso").style.display = "block"
         }
     } else {
         alert("Digite o nome de uma cidade")
