@@ -85,7 +85,7 @@ body{
     border: 1px solid #fff;
     transform-origin: left;
 }
-.vento-info, .temp-info{
+.vento-info, .temp-info, .aviso,#climaImg{
     margin-top: 10px;
 }
 .aviso{

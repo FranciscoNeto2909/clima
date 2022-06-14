@@ -25,6 +25,7 @@ form.addEventListener("submit", async (e) => {
             loader.style.display = "none"
             container.style.display = "block"
             document.querySelector(".explain").style.display = "none"
+            document.querySelector(".aviso").style.display = "none"
 
         }else{
             loader.style.visibility = "hidden"
