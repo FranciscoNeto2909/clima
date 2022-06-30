@@ -9,7 +9,6 @@ form.addEventListener("submit", async (e) => {
         const container = document.querySelector(".container")
         loader.style.visibility = "visible"
         container.style.display = "none"
-
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(cityName)}&appid=1b95d864e8b125f57fbc08894d3ff146&units=metric&lang=pt_br`
         
         const response = await fetch(url)

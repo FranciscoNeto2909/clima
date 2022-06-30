@@ -9,29 +9,31 @@
     <title>Clima</title>
 </head>
 <body>
-    <h1 class="title">Clima atual</h1>
-    <p class="explain">Digite o nome de uma cidade...</p>
-    <form class="search-container">
-        <input type="text" id="city" autocomplete="none">
-        <button>Buscar</button>
-    </form>
-    <div class="loader">
-        <div class="loader-item "></div>
-        <div class="loader-item loader-item--secund"></div>
-        <div class="loader-item loader-item--third"></div>
-    </div>
-    <h3 class="aviso">Cidade não encontrada!</h3>
-    <div class="container">
-        <h2 id="cityName"></h2>
-        <div class="clima-container">
-            <div class="temperatura">
-                <h3>Temperatura</h3>
-                <h3 class="temp-info"></h3>
-                <img src="" alt="clima" id="climaImg">
-            </div>
-            <div class="vento">
-                <h3>Vento</h3>
-                <h3 class="vento-info"></h3>
+    <div class="clima">
+        <h1 class="title">Clima atual</h1>
+        <p class="explain">Digite o nome de uma cidade...</p>
+        <form class="search-container">
+            <input type="text" id="city" autocomplete="none">
+            <button>Buscar</button>
+        </form>
+        <div class="loader">
+            <div class="loader-item "></div>
+            <div class="loader-item loader-item--secund"></div>
+            <div class="loader-item loader-item--third"></div>
+        </div>
+        <h3 class="aviso">Cidade não encontrada!</h3>
+        <div class="container">
+            <h2 id="cityName"></h2>
+            <div class="clima-container">
+                <div class="temperatura">
+                    <h3>Temperatura</h3>
+                    <h3 class="temp-info"></h3>
+                    <img src="" alt="clima" id="climaImg">
+                </div>
+                <div class="vento">
+                    <h3>Vento</h3>
+                    <h3 class="vento-info"></h3>
+                </div>
             </div>
         </div>
     </div>
