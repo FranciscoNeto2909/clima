@@ -14,7 +14,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .clima{
-    width: 300px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +30,7 @@ body{
 }
 .search-container input{
     padding: 8px;
+    width: 70%;
     font-size: 15px;
     border: 0;
     outline: none;
@@ -134,5 +135,10 @@ body{
     }
     60%{
         transform: scaleY(1);
+    }
+}
+@media (max-width: 500px) {
+    .clima{
+        width: 100vw;
     }
 }
