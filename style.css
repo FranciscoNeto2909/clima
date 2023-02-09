@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,22 +14,26 @@ body{
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
-.clima{
-    width: 320px;
+
+.clima {
+    min-height: 300px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     border-radius: 5px;
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.25);
 }
-.search-container,footer,.explain{
+
+.search-container,
+footer {
     margin-top: 15px;
 }
-.title{
-    margin-bottom: 20px;
-}
-.search-container input{
+
+.search-container input {
     padding: 8px;
     width: 70%;
     font-size: 15px;
@@ -37,7 +42,8 @@ body{
     border-radius: 5px;
     color: #000;
 }
-.search-container button{
+
+.search-container button {
     padding: 8px;
     border: 0;
     border-radius: 5px;
@@ -45,10 +51,12 @@ body{
     background-color: #555;
     cursor: pointer;
 }
-.search-container button:hover{
+
+.search-container button:hover {
     background-color: #444;
 }
-.container{
+
+.container {
     height: 250px;
     width: 250px;
     margin: 15px 0;
@@ -57,27 +65,38 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
     display: none;
 }
-.container h2{
+
+.container h2 {
     text-align: center;
     color: #fff;
     margin: 20px 0;
 }
-.clima-container{
+
+.clima-container {
     display: flex;
     justify-content: space-around;
     color: #fff;
 }
-.temperatura{
+
+.temperatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     text-align: center;
     width: 50%;
 }
-.vento{
+
+.vento {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    gap: 10px;
     width: 50%;
 }
-.vento-area{
+
+.vento-area {
     height: 55px;
     width: 55px;
     border: 1px solid #fff;
@@ -88,57 +107,78 @@ body{
     align-items: center;
     justify-content: center;
 }
-.vento-ponto{
+
+.vento-ponto-container {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vento-ponto {
     height: 1px;
-    width:15px;
+    width: 15px;
+    margin-left: 10px;
     border: 1px solid #fff;
     transform-origin: left;
+    transform: rotate(-145deg);
 }
-.vento-info, .temp-info, .aviso,#climaImg{
-    margin-top: 10px;
-}
-.aviso{
+
+.aviso {
     display: none;
 }
-.footer{
+
+.footer {
     position: fixed;
     bottom: 5px;
 }
-.loader{
+
+.loader {
     visibility: hidden;
     margin-top: 5px;
     height: 50px;
     width: 50px;
-    background-color: #232323;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
 }
-.loader-item{
+
+.loader-item {
     height: 25px;
     width: 5px;
     background-color: #fff;
     border-radius: 5px;
     animation: scale-up 2s ease-in-out infinite;
 }
-.loader-item--secund{
+
+.loader-item--secund {
     animation-delay: .3s;
 }
-.loader-item--third{
+
+.loader-item--third {
     animation-delay: .6s;
 }
 
-@keyframes scale-up{
-    20%{
+@keyframes scale-up {
+    20% {
         transform: scaleY(1.5);
     }
-    60%{
+
+    60% {
         transform: scaleY(1);
     }
 }
+
 @media (max-width: 500px) {
-    .clima{
+    .clima {
         width: 100vw;
     }
 }
