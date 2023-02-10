@@ -33,6 +33,10 @@ footer {
     margin-top: 15px;
 }
 
+.explain{
+    color: rgb(216, 216, 216);
+}
+
 .search-container input {
     padding: 8px;
     width: 70%;
@@ -179,6 +183,6 @@ footer {
 
 @media (max-width: 500px) {
     .clima {
-        width: 100vw;
+        width: 90vw;
     }
 }

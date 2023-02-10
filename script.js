@@ -3,7 +3,7 @@ const form = document.querySelector(".search-container")
 form.addEventListener("submit", async (e) => {
     e.preventDefault()
     const cityName = document.querySelector("#city").value
-
+    document.activeElement.blur();
     if (cityName !== "") {
         const loader = document.querySelector(".loader")
         const container = document.querySelector(".container")
